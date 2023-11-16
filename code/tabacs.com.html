@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réseaux - Exemple</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007BFF;
+            padding: 1em;
+            text-align: center;
+        }
+
+        h1 {
+            color: #fff;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #007BFF;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Réseaux</h1>
+    </header>
+    <section>
+        <h2>1 – Définition du protocole DHCP</h2>
+        <p>DHCP signifie Dynamic Host Configuration Protocol. Il s’agit d’un protocole qui permet à un ordinateur qui se connecte sur un réseau local d’obtenir dynamiquement et automatiquement sa configuration IP. Le but principal étant la simplification de l’administration d’un réseau...</p>
+
+        <h2>2 – Références à DHCP</h2>
+        <p>Les incontournables RFCs :</p>
+        <ul>
+            <li>RFC951 : Bootp</li>
+            <li>RFC1497 : Options vendor extensions</li>
+            <li>RFC1541 : Définition du protocole Dhcp</li>
+            <li>RFC1542 : Interaction entre Bootp et Dhcp</li>
+            <li>RFC2131 : Complément à la Rfc 1541</li>
+            <li>RFC2132 : Complément aux options vendor extensions</li>
+        </ul>
+
+        <h2>3 – Fonctionnement</h2>
+        <p>DHCP fonctionne sur le modèle client-serveur : un serveur, qui détient la politique d’attribution des configurations IP, envoie une configuration donnée pour une durée donnée à un client donné (typiquement, une machine qui vient de démarrer)...</p>
+
+        <h2>4 – Les baux</h2>
+        <p>Pour des raisons d'optimisation des ressources réseau, les adresses IP sont délivrées pour une durée limitée. C’est ce qu’on appelle un bail (lease en anglais). Un client qui voit son bail arriver à terme peut demander au serveur un renouvellement du bail...</p>
+
+        <h2>5 – Dynamique ou pas ?</h2>
+        <p>Un serveur DHCP est censé fournir des adresses dynamiques (un même ordinateur peut recevoir successivement 2 adresses différentes), mais il peut fournir une adresse IP fixe à un client bien particulier...</p>
+
+        <h2>6 – Les requêtes et les messages DHCP</h2>
+        <p>[Ajoutez votre contenu ici]</p>
+    </section>
+    <footer>
+        <p>Auteur: Eloham Caron</p>
+    </footer>
+</body>
+</html>
